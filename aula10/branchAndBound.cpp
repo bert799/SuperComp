@@ -51,10 +51,11 @@ BackPack branchAndBound(int i, std::vector<Item> *items, BackPack backPack){
                 return m2;
             }
         }
-        else if (m1.weight <= W){
+        //mudar conferencias
+        else if (m1.capacity <= W){
             return m1;
         }
-        else if (m2.weight <= W){
+        else if (m2.capacity <= W){
             return m2;
         }
         else {
